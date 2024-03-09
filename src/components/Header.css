@@ -1,0 +1,54 @@
+*{
+    font-family: 'Nunito sans', sans-serif;
+}
+
+.container-fluid {
+    background-color: #444;
+    height: 4em;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding-left: 3em;
+    font-size: 22px;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke;
+}
+
+.navbar-nav {
+    padding-right: 3em;
+    gap: 1em;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;      
+}
+
+@media (min-width: 320px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none !important;
+    }
+
+    .navbar-toggler.collapsed + .navbar-collapse {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+    }
+}

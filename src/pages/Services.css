@@ -1,0 +1,68 @@
+.services-container {
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+.banner {
+    width:100%;
+    height: 100px;
+}
+
+.s-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.services {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ux-design, .dev-web, .seo {
+    flex-basis: 33,3%;
+    width: 300px;
+    padding: 35px 10px 45px 10px;
+    font-size: small;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ux-design {
+    margin-left: 50px;
+}
+
+.dev-web {
+    margin: 0 20px ;
+}
+
+.seo {
+    margin-right: 50px;
+}
+
+.s-title {
+    font-size: large;
+}
+
+.dotted {
+    border-bottom: 1px dashed black;
+    text-decoration: none;
+}
+
+.s-icon {
+    width: 30px;
+    height: 30px;
+    color: #0d6efd;
+    padding-bottom: 10px;
+}
+
+.s-icon:hover {
+    color:#cde1f8;
+}
+
