@@ -17,28 +17,22 @@
     flex-basis: 100%;
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
     margin-top: 40px;
 }
+
 #card1, #card2, #card3 {
     flex-basis: 33,3%;
     width: 300px;
-    padding: 35px 10px 45px 10px;
     font-size: small;
-    border: 1px solid #EEE;
     border-radius: 10px;
-    background-color: white;
-}
-
-#card1 {
-    margin-left: 50px;
 }
 
 #card2 {
-    margin: 0 20px ;
+    margin: 0 20px 20px 20px;
 }
 
-#card3 {
-    margin-right: 50px;
+.card_body {
+    background-color: white;
+    border: 1px solid grey;
 }

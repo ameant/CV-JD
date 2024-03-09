@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faSquareTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+import { Link } from "react-router-dom";
+
 import "./Footer.css";
 
 const Footer = () => {
@@ -40,8 +42,11 @@ const Footer = () => {
                         <a className="page-link" href="/contact">
                             <li>Me contacter</li>
                         </a>
-                        <li>Mentions Légales</li>
+                        <Link className="page-link" to="/mentionslegales">
+                            <li>Mentions Légales</li>
+                        </Link>
                     </ul>
+
                 </div>
                 <div className="column-three">
                     <h5>Mes dernières réalisations</h5>

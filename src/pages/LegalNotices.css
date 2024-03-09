@@ -1,0 +1,15 @@
+.nl-container {
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+.ln-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.accordion {
+    margin: 40px 100px 2px 100px;
+}

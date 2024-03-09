@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
+    background-color: whitesmoke;
 }
 
 .b-header {
@@ -9,4 +11,28 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+}
+
+.blog {
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card {
+    width: 300px;
+    font-size: small;
+    border-radius: 10px;
+}
+
+#bcard2, #bcard5 {
+    margin: 0 10px;
+}
+
+#bcard6 {
+    margin-bottom: 20px;
 }
