@@ -9,28 +9,25 @@
     color: white;
 }
 
-.home-section::after {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .about-section {
     display: flex;
-    margin: 3em;
-    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
 }
 
 .about-container {
-    flex-direction: row;
     justify-content: left;
-    flex-basis: 50%;
     background-color: white;
     padding: 2em;
+    margin: 30px 0;
 }
 
 .about-title {
@@ -45,12 +42,18 @@
 .a-img {
     width: 400px;
     height: 200px;
+    border-radius: 10px;
+    margin-bottom: 7px;
 }
 
 .progress-container {
-    flex-direction: row;
     justify-content: right;
-    flex-basis: 50%;
     background-color: white;
     padding: 2em;
+    margin: 30px 0;
+}
+
+.progress {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }

@@ -16,13 +16,13 @@ const Footer = () => {
                     69009 Lyon, France <br />
                     Téléphone : 06 20 30 40 50</p>
                     <div className="icon-links">
-                    <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer">
+                    <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer nofollow">
                         <FontAwesomeIcon icon={faGithub} className="f-icon"/>
                     </a>
-                    <a  className="icon-link" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                    <a  className="icon-link" href="https://twitter.com/" target="_blank" rel="noreferrer nofollow">
                         <FontAwesomeIcon icon={faSquareTwitter} className="f-icon"/>
                     </a>
-                    <a className="icon-link" href="https://linkedin.com/" target="_blank" rel="noreferrer">
+                    <a className="icon-link" href="https://linkedin.com/" target="_blank" rel="noreferrer nofollow">
                         <FontAwesomeIcon icon={faLinkedin} className="f-icon"/>
                     </a>
                     </div>

@@ -9,6 +9,7 @@ const Creations = () => {
             <div className="c-header">
                 <h1>PORTFOLIO</h1>
                 <p>Voici quelques-unes de mes réalisations.</p>
+                <hr />
             </div>
             <section className="creations">
                 <div class="card text-center" id="card1">

@@ -1,5 +1,51 @@
-.contact-container {
+.contact-page {
+    background-image: url(/public/images/contact-bg.jpg);
+    background-size: 108%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    height: 90%;  
+    width: 90%;
+    border-radius: 10px;
+}
+
+.contact-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-title {
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 6px;
+}
+
+.form-section {
+    padding: 2em;
+    flex-basis: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.map-section {
+    padding: 2em;
+    flex-basis: 50%;
 }

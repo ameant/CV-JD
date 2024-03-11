@@ -37,10 +37,6 @@
     margin: 0 20px ;
 }
 
-.s-title {
-    font-size: large;
-}
-
 .dotted {
     border-bottom: 1px dashed black;
     text-decoration: none;

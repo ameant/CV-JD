@@ -9,6 +9,7 @@ const Blog = () => {
             <div className="b-header">
                 <h1>BLOG</h1>
                 <p>Retrouvez ici quelques articles sur le développement web.</p>
+                <hr />
             </div>
 
             <section className="blog">

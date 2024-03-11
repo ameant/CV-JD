@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faMobileScreenButton, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 import "./LegalNotices.css";
 
@@ -7,6 +9,7 @@ const LegalNotices = () => {
         <div className="nl-container">
             <div className="ln-header">
                 <h1>MENTIONS LÉGALES</h1>
+                <hr />
             </div>
 
             <div class="accordion">
@@ -18,10 +21,13 @@ const LegalNotices = () => {
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>40 Rue Laure Diebold <br/>
-                            69009 Lyon, France <br/>
-                            06 20 30 40 50 <br/>
-                            john.doe@gmail.com</p>
+                            <h4>John Doe</h4>
+                            <p> <FontAwesomeIcon icon={faLocationDot} /> 40 Rue Laure Diebold <br/>
+                            69009 Lyon, France</p>
+                            <FontAwesomeIcon icon={faMobileScreenButton} />
+                            <a href="tel:0620304050"> 06 20 30 40 50 </a> <br />
+                            <FontAwesomeIcon icon={faEnvelope} />
+                            <a href="mailto:john.doe@gmail.com"> john.doe@gmail.com </a>
                         </div>
                     </div>
                 </div>
@@ -34,9 +40,11 @@ const LegalNotices = () => {
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
+                            <h4>Always Data</h4>
                             <p>91 rue du Faubourg Saint Honoré <br/>
                             75008 Paris</p>
-                            <a href="https://www.alwaysdata.com/">https://www.alwaysdata.com</a>
+                            <FontAwesomeIcon icon={faGlobe} />
+                            <a href="https://www.alwaysdata.com/" target="_blank" rel="noreferrer"> https://www.alwaysdata.com</a>
                         </div>
                     </div>
                 </div>
@@ -49,8 +57,9 @@ const LegalNotices = () => {
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
+                            <h4>Crédits</h4>
                             <p>Site développé par John Doe, étudiant du CEF.</p>
-                            <p>Les images libresde droits sont issues du site <a href="https://pixabay.com/fr/">Pixabay</a>.</p>
+                            <p>Les images libresde droits sont issues du site <a href="https://pixabay.com/fr/" target="_blank" rel="noreferrer">Pixabay</a>.</p>
                         </div>
                     </div>
                 </div>

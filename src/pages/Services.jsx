@@ -11,7 +11,9 @@ const Services = () => {
             <div className="s-header">
                 <h1>MON OFFRE DE SERVICES</h1>
                 <p>Voici les prestations sur lesquelles je peux intervenir.</p>
+                <hr />
             </div>
+
             <div className="services">
                 <div className="ux-design">
                     <FontAwesomeIcon icon={faDisplay} className="s-icon"/>
