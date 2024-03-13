@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright">
-                <p> &copy; Designed by John Doe</p>
+                <p className="copyright_txt"> &copy; Designed by John Doe</p>
             </div>
         </div>
     )

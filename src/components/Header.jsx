@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./Header.css";
@@ -17,23 +17,27 @@ const Header = () => {
         }
     }
 
+    const [showLinks, setShowLinks] = useState(false);
+
+    const toggleMenu = () => {
+        setShowLinks(!showLinks);
+    };
+
     return (
         <div>
-           <nav className="navbar navbar-expand-xl navbar-light">
-                <div className="container-fluid">
+           <nav className="menubar">
+                <div className="menulogo">
                     <NavLink style={navLogoStyle} className="navbar-brand mb-0 h1" to="/">John Doe</NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <div className="navbar-nav">
-                            <NavLink style={navLinkStyles} className="nav-link" to="/">Accueil</NavLink>
-                            <NavLink style={navLinkStyles} className="nav-link" to="/services">Services</NavLink>
-                            <NavLink style={navLinkStyles} className="nav-link" to="/creations">Réalisations</NavLink>
-                            <NavLink style={navLinkStyles} className="nav-link" to="/blog">Blog</NavLink>
-                            <NavLink style={navLinkStyles} className="nav-link" to="/contact">Me contacter</NavLink>
-                        </div>
-                    </div>
+                </div>
+                <button className="burgermenu" onClick={toggleMenu}>
+                    <span className="burgerbar"></span>
+                </button>
+                <div className={`menulinks ${showLinks ? 'show' : ''}`}>
+                    <NavLink style={navLinkStyles} className="menulink" to="/" onClick={toggleMenu}>Accueil</NavLink>
+                    <NavLink style={navLinkStyles} className="menulink" to="/services" onClick={toggleMenu}>Services</NavLink>
+                    <NavLink style={navLinkStyles} className="menulink" to="/creations" onClick={toggleMenu}>Réalisations</NavLink>
+                    <NavLink style={navLinkStyles} className="menulink" to="/blog" onClick={toggleMenu}>Blog</NavLink>
+                    <NavLink style={navLinkStyles} className="menulink" to="/contact" onClick={toggleMenu}>Me contacter</NavLink>
                 </div>
             </nav>
         </div>

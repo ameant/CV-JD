@@ -30,6 +30,12 @@ p, span, form {
     color: #444;
 }
 
+.card {
+    width: 300px;
+    font-size: small;
+    border-radius: 10px;
+}
+
 hr {
     width: 200px;
     border: 2px solid #0d6efd;

@@ -15,7 +15,7 @@ const Services = () => {
             </div>
 
             <div className="services">
-                <div className="ux-design">
+                <div className="ux">
                     <FontAwesomeIcon icon={faDisplay} className="s-icon"/>
                     <h4 className="s-title">UX DESIGN</h4>
                     <p>L'<strong>UX Design</strong> est une méthode de <br/>
@@ -23,7 +23,7 @@ const Services = () => {
                     est d'offrir une expérience de navigation <br/>
                     optimale à l'internaute.</p>
                 </div>
-                <div className="dev-web">
+                <div className="dev">
                     <FontAwesomeIcon icon={faFileCode} className="s-icon"/>
                     <h4 className="s-title">DÉVELOPPEMENT WEB</h4>
                     <p>Le <strong>développement de sites web</strong> repose sur <br/>

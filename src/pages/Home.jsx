@@ -17,15 +17,15 @@ const Home = () => {
             <section className="about-section" id="about-section">
                 <div className="about-container">
                     <h3 className="about-title">À  propos</h3>
-                    <p className="about-p">Passioné par l'informatique et les nouvelles <br/> 
-                    technologies, j'ai suivi une formation <strong>d'intégrateur- <br/> 
-                    développer web</strong> au CEF. Au cours de cette formation, <br/>
-                    j'ai pu acquérir des bases solides pour travailler dans le <br/>
+                    <p className="about-p">Passioné par l'informatique et les nouvelles
+                    technologies, j'ai suivi une formation <strong>d'intégrateur- 
+                    développer web</strong> au CEF. Au cours de cette formation,
+                    j'ai pu acquérir des bases solides pour travailler dans le
                     domaine du <strong>développement web</strong>.</p>
-                    <p>Basé à Lyon, je suis en recherche d'une alternance au <br/> 
-                    sein d'une agence digitale pour consolider ma formation <br/>
+                    <p>Basé à Lyon, je suis en recherche d'une alternance au 
+                    sein d'une agence digitale pour consolider ma formation
                      de <strong>développeur web full stack</strong>.</p>
-                    <p>J'accorde une attention particulière à la qualité du code <br/> 
+                    <p>J'accorde une attention particulière à la qualité du code 
                     que j'écris et je respecte les bonnes pratiques du web.</p>
                 </div>
                 <div className="progress-container">

@@ -10,29 +10,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding-top: 20px;
-}
-
-.blog {
-    margin-top: 30px;
-    flex-direction: column;
 }
 
 .card-container {
     display: flex;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.card {
-    width: 300px;
-    font-size: small;
-    border-radius: 10px;
-}
-
-#bcard2, #bcard5 {
+#b_card {
     margin: 0 10px;
 }
 
-#bcard6 {
-    margin-bottom: 20px;
+/* Configuration mobile */
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Configuration tablette */
+
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .card-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

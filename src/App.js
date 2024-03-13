@@ -21,14 +21,14 @@ function App() {
       </header>
 
       <main>
-      <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/creations" element={<Creations />}></Route>
-          <Route path="/blog" element={<Blog />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/mentionslegales" element={<LegalNotices />}></Route>
-      </Routes>
+        <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/creations" element={<Creations />}></Route>
+            <Route path="/blog" element={<Blog />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/mentionslegales" element={<LegalNotices />}></Route>
+        </Routes>
       </main>
 
       <footer>
