@@ -1,10 +1,11 @@
-.creations-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 40px;
+/* Page entière */
+
+.creations-page {
     background-color: whitesmoke;
+    padding-bottom: 50px;
 }
+
+/* Header */
 
 .c-header {
     display: flex;
@@ -13,32 +14,39 @@
     padding-top: 20px;
 }
 
+/* Réalisations */
+
 .creations {
-    flex-basis: 100%;
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
+    gap: 20px;
 }
-#card1, #card2, #card3 {
-    flex-basis: 33,3%;
-    width: 300px;
-    padding: 35px 10px 45px 10px;
-    font-size: small;
-    border: 1px solid #EEE;
-    border-radius: 10px;
+
+.card_body {
     background-color: white;
+    border: 1px solid grey;
 }
 
-#card1 {
-    margin-left: 50px;
+/* Configuration mobile */
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .creations {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-#card2 {
-    margin: 0 20px ;
-}
+/* Configuration tablette */
 
-#card3 {
-    margin-right: 50px;
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .creations {
+        flex-wrap: wrap;
+    }
+
+    #c_card {  
+        height: 400px;
+    }
 }

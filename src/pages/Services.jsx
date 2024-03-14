@@ -6,14 +6,19 @@ import "./Services.css";
 
 const Services = () => {
     return (
-        <div className="services-container">
+        <div className="services-page">
             <img src="/images/banner.jpg" alt="banner" className="banner"/>
+
+            {/* Header */}
             <div className="s-header">
                 <h1>MON OFFRE DE SERVICES</h1>
                 <p>Voici les prestations sur lesquelles je peux intervenir.</p>
+                <hr />
             </div>
+
             <div className="services">
-                <div className="ux-design">
+                {/* UX Design */}
+                <div className="service">
                     <FontAwesomeIcon icon={faDisplay} className="s-icon"/>
                     <h4 className="s-title">UX DESIGN</h4>
                     <p>L'<strong>UX Design</strong> est une méthode de <br/>
@@ -21,14 +26,18 @@ const Services = () => {
                     est d'offrir une expérience de navigation <br/>
                     optimale à l'internaute.</p>
                 </div>
-                <div className="dev-web">
+                
+                {/* Développement web */}
+                <div className="service">
                     <FontAwesomeIcon icon={faFileCode} className="s-icon"/>
                     <h4 className="s-title">DÉVELOPPEMENT WEB</h4>
                     <p>Le <strong>développement de sites web</strong> repose sur <br/>
                     l'utilisation des langages <u className="dotted">HTML</u>, <u className="dotted">CSS</u>, <br/>
                     Javascript et <u className="dotted">PHP</u>.</p>
                 </div>
-                <div className="seo">
+
+                {/* SEO */}
+                <div className="service">
                     <FontAwesomeIcon icon={faMagnifyingGlassDollar} className="s-icon"/>
                     <h4 className="s-title">RÉFÉRENCEMENT</h4>
                     <p>Le <strong>référencement naturel d'un site</strong>, aussi <br/> 

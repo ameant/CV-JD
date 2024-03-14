@@ -1,4 +1,5 @@
-.home-section {
+/* Bloc image et header */
+.home-bloc {
     background-image: url(/public/images/hero-bg.jpg);
     background-size: cover;
     height: 100vh;
@@ -6,31 +7,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
-.home-section::after {
-    background-color: rgba(0, 0, 0, 0.3);
-}
+/* Header */
 
-.home-container {
+.home-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.about-section {
-    display: flex;
-    margin: 3em;
-    flex-basis: 100%;
+.home-header h1, h2 {
+    color: white !important;
 }
+
+/* Bloc À  propos */
+
+.about-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+/* À  propos */
 
 .about-container {
-    flex-direction: row;
     justify-content: left;
-    flex-basis: 50%;
     background-color: white;
-    padding: 2em;
+    padding: 30px;
+    margin: 30px 0;
+    width: 45%;
 }
 
 .about-title {
@@ -42,15 +52,39 @@
     padding-top: 1em;
 }
 
+/* Compétences */
+
 .a-img {
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    max-height: 45%;
+    border-radius: 5px;
+    margin-bottom: 7px;
 }
 
 .progress-container {
-    flex-direction: row;
-    justify-content: right;
-    flex-basis: 50%;
     background-color: white;
-    padding: 2em;
+    padding: 30px;
+    margin: 30px 0;
+    width: 45%;
+}
+
+.progress {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Configuration mobile */
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .about-bloc {
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 0 60px 0;
+    }
+    
+    .about-container,
+    .progress-container {
+        width: 100%;
+        margin: 0;
+    }
 }

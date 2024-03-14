@@ -1,54 +1,129 @@
-*{
-    font-family: 'Nunito sans', sans-serif;
+/* Barre de navigation */
+
+.menubar {
+    background-color: #444;
+    height: 60px;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container-fluid {
-    background-color: #444;
-    height: 4em;
-}
+/* Logo textuel */
 
 .navbar-brand {
-    color: whitesmoke;
+    color: white;
     text-transform: uppercase;
-    padding-left: 3em;
+    margin-left: 70px;
     font-size: 22px;
 }
 
+.navbar-brand.active {
+    color: white;
+}
+
 .navbar-brand:hover {
-    color: whitesmoke;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.navbar-nav {
-    padding-right: 3em;
-    gap: 1em;
-}
+/* Liens */
 
-.nav-link{
+.menulinks {
+    display: flex;
+    margin-right: 80px;
+    align-items: center;
+    gap: 20px;
     text-decoration: none;
-    color: grey;
-    text-transform: uppercase;      
+    text-transform: uppercase;  
+    font-weight: 600;
 }
 
-@media (min-width: 320px) {
-    .navbar-toggler {
+.menulink {
+    color: grey !important;
+}
+
+.menulink.active {
+    color: white !important;
+}
+
+.menulink:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* Menu burger */
+
+.burgermenu {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    color: inherit;
+    display: none;
+}
+
+.burgermenu {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    color: white;
+    display: none;
+}
+
+.burgerbtn,
+.burgerbtn::before,
+.burgerbtn::after {
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: relative;
+    background-color: white;
+}
+
+.burgerbtn::before,
+.burgerbtn::after {
+    content: "";
+}
+
+.burgerbtn::before {
+    transform: translateY(-9px);
+}
+
+.burgerbtn::after {
+    transform: translateY(7px);
+}
+
+/* Configurations mobile et tablette */
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .burgermenu {
         display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 999;
+        border-color: grey;
+        border-radius: 5px;
     }
 
-    .navbar-collapse {
-        display: none !important;
+    .burgermenu:hover {
+        border-color: white;
     }
 
-    .navbar-toggler.collapsed + .navbar-collapse {
-        display: block !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar-toggler {
+    .menulinks {
         display: none;
+        position: absolute;
+        top: 40px;
+        background-color: #444;
+        padding: 20px 0 10px 80px;
+        width: 100%;
     }
 
-    .navbar-collapse {
-        display: flex !important;
+    .menulinks.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }

@@ -1,32 +1,36 @@
+/* Colonnes */
+
 .columns {
+    background-color: #EEE;
+    padding: 2em;
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
-    background-color: #EEE;
-    padding: 2em;
 }
-
+    
 .column-one, .column-two, .column-three, .column-four {
     flex-basis: 25%;
 }
 
+/* Listes */
+
 li {
     font-size: medium;
     list-style-type: '> ';
+    color: #444;
 }
 
 li::marker {
-    color: #0d6efd ;
+    color: #0d6efd;
+    font-weight: bolder;
 }
+
+/* Icônes */
 
 .icon-links {
     display: flex;
     gap: 15px;
     padding-left: 15px;
-}
-
-.icon-link {
-    color:inherit;
 }
 
 .icon-link:hover {
@@ -36,18 +40,60 @@ li::marker {
 .f-icon {
     width: 25px;
     height: 25px;
+    color: #444;
 }
 
 .page-link {
-    text-decoration: none;
+    color: #444 !important;
 }
+
+/* Copyright */
 
 .copyright {
     background-color: #444;
-    color: white;
     height: 3em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1em;
+    padding: 3em 0;
+}
+
+.copyright-txt {
+    color: white;
+}
+
+.scroll-to-top {
+    color: white;
+    background-color: #444;
+    border-color: #0d6efd;
+    border-radius: 25px;
+}
+
+.scroll-to-top:hover {
+    background-color: #0d6efd;
+}
+
+/* Configuration mobile */
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .columns {
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+}
+
+/* Configuration tablette */
+
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    
+    .column-one, .column-two, .column-three, .column-four {
+        flex-basis: 50%;
+        width: 100%;
+    }
 }

@@ -1,0 +1,27 @@
+/* Page entière */
+
+.nl-page {
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+/* Header */
+
+.ln-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Accordéon */
+
+.accordion {
+    margin: 30px;
+}
+
+/* Liens */
+
+.ln-link {
+    color:  #298eff !important;
+}
