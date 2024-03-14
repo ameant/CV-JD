@@ -4,14 +4,18 @@ import "./Creations.css";
 
 const Creations = () => {
     return (
-        <div className="creations-container">
+        <div className="creations-page">
             <img src="/images/banner.jpg" alt="banner" className="banner"/>
+
+            {/* Header */}
             <div className="c-header">
                 <h1>PORTFOLIO</h1>
                 <p>Voici quelques-unes de mes réalisations.</p>
                 <hr />
             </div>
-            <section className="creations">
+
+            {/* Réalisations */}
+            <div className="creations">
                 <div className="card text-center" id="c_card">
                     <img className="card-img-top" src="/images/fresh-food.jpg" alt="Fruits et légumes"/>
                     <div className="card-body">
@@ -49,7 +53,7 @@ const Creations = () => {
                         Site réalisé en HTML/CSS
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }

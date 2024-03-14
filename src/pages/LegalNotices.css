@@ -1,7 +1,11 @@
-.nl-container {
+/* Page entière */
+
+.nl-page {
     background-color: whitesmoke;
     padding-bottom: 40px;
 }
+
+/* Header */
 
 .ln-header {
     display: flex;
@@ -10,10 +14,14 @@
     padding-top: 20px;
 }
 
+/* Accordéon */
+
 .accordion {
     margin: 30px;
 }
 
-a {
-    text-decoration: none;
+/* Liens */
+
+.ln-link {
+    color:  #298eff !important;
 }

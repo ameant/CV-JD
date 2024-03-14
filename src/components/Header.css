@@ -12,10 +12,18 @@
 /* Logo textuel */
 
 .navbar-brand {
-    color: whitesmoke;
+    color: white;
     text-transform: uppercase;
     margin-left: 70px;
     font-size: 22px;
+}
+
+.navbar-brand.active {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Liens */
@@ -25,14 +33,23 @@
     margin-right: 80px;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-weight: 600;
 }
 
 .menulink {
-    text-decoration: none;
-    color: grey;
-    text-transform: uppercase;  
-    font-weight: 600;    
+    color: grey !important;
 }
+
+.menulink.active {
+    color: white !important;
+}
+
+.menulink:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
 
 /* Menu burger */
 
@@ -54,9 +71,9 @@
     display: none;
 }
 
-.burgerbar,
-.burgerbar::before,
-.burgerbar::after {
+.burgerbtn,
+.burgerbtn::before,
+.burgerbtn::after {
     display: block;
     width: 24px;
     height: 2px;
@@ -64,16 +81,16 @@
     background-color: white;
 }
 
-.burgerbar::before,
-.burgerbar::after {
+.burgerbtn::before,
+.burgerbtn::after {
     content: "";
 }
 
-.burgerbar::before {
+.burgerbtn::before {
     transform: translateY(-9px);
 }
 
-.burgerbar::after {
+.burgerbtn::after {
     transform: translateY(7px);
 }
 
@@ -99,7 +116,7 @@
         position: absolute;
         top: 40px;
         background-color: #444;
-        padding: 20px 0 20px 80px;
+        padding: 20px 0 10px 80px;
         width: 100%;
     }
 

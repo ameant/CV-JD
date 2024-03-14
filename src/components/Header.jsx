@@ -5,18 +5,6 @@ import "./Header.css";
 
 const Header = () => {
 
-    const navLinkStyles = ({isActive}) => {
-        return {
-            color: isActive ? 'white' : 'grey',
-        }
-    }
-
-    const navLogoStyle = ({isActive}) => {
-        return {
-            color: isActive ? 'white' : 'white',
-        }
-    }
-
     const [showLinks, setShowLinks] = useState(false);
 
     const toggleMenu = () => {
@@ -25,19 +13,24 @@ const Header = () => {
 
     return (
         <div>
+            {/* Barre de navigation */}
            <nav className="menubar">
                 <div className="menulogo">
-                    <NavLink style={navLogoStyle} className="navbar-brand mb-0 h1" to="/">John Doe</NavLink>
+                    <NavLink className="navbar-brand mb-0 h1" to="/">John Doe</NavLink>
                 </div>
+
+                {/* Bouton du menu burger */}
                 <button className="burgermenu" onClick={toggleMenu}>
-                    <span className="burgerbar"></span>
+                    <span className="burgerbtn"></span>
                 </button>
+
+                {/* Liens de navigation */}
                 <div className={`menulinks ${showLinks ? 'show' : ''}`}>
-                    <NavLink style={navLinkStyles} className="menulink" to="/" onClick={toggleMenu}>Accueil</NavLink>
-                    <NavLink style={navLinkStyles} className="menulink" to="/services" onClick={toggleMenu}>Services</NavLink>
-                    <NavLink style={navLinkStyles} className="menulink" to="/creations" onClick={toggleMenu}>Réalisations</NavLink>
-                    <NavLink style={navLinkStyles} className="menulink" to="/blog" onClick={toggleMenu}>Blog</NavLink>
-                    <NavLink style={navLinkStyles} className="menulink" to="/contact" onClick={toggleMenu}>Me contacter</NavLink>
+                    <NavLink className="menulink" to="/" onClick={toggleMenu}>Accueil</NavLink>
+                    <NavLink className="menulink" to="/services" onClick={toggleMenu}>Services</NavLink>
+                    <NavLink className="menulink" to="/creations" onClick={toggleMenu}>Réalisations</NavLink>
+                    <NavLink className="menulink" to="/blog" onClick={toggleMenu}>Blog</NavLink>
+                    <NavLink className="menulink" to="/contact" onClick={toggleMenu}>Me contacter</NavLink>
                 </div>
             </nav>
         </div>

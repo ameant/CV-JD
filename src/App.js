@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -15,27 +14,27 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header>
         <Header />
       </header>
 
       <main>
         <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/services" element={<Services />}></Route>
-            <Route path="/creations" element={<Creations />}></Route>
-            <Route path="/blog" element={<Blog />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/mentionslegales" element={<LegalNotices />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/creations" element={<Creations />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/mentionslegales" element={<LegalNotices />}></Route>
         </Routes>
       </main>
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
-  );
+  )
 }
 
 export default App;

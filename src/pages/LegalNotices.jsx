@@ -6,15 +6,19 @@ import "./LegalNotices.css";
 
 const LegalNotices = () => {
     return (
-        <div className="nl-container">
+        <div className="nl-page">
+
+            {/* Header */}
             <div className="ln-header">
                 <h1>MENTIONS LÉGALES</h1>
                 <hr />
             </div>
 
+            {/* Accordéon */}
             <div className="accordion">
+                {/* Éditeur */}
                 <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingOne">
+                    <h2 className="accordion-header">
                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Éditeur du site
                         </button>
@@ -25,15 +29,16 @@ const LegalNotices = () => {
                             <p> <FontAwesomeIcon icon={faLocationDot} /> 40 Rue Laure Diebold <br/>
                             69009 Lyon, France</p>
                             <FontAwesomeIcon icon={faMobileScreenButton} />
-                            <a href="tel:0620304050"> 06 20 30 40 50 </a> <br />
+                            <a className="ln-link" href="tel:0620304050"> 06 20 30 40 50 </a> <br />
                             <FontAwesomeIcon icon={faEnvelope} />
-                            <a href="mailto:john.doe@gmail.com"> john.doe@gmail.com </a>
+                            <a className="ln-link" href="mailto:john.doe@gmail.com"> john.doe@gmail.com </a>
                         </div>
                     </div>
                 </div>
 
+                {/* Hébergeur */}
                 <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingTwo">
+                    <h2 className="accordion-header">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Hébergeur
                         </button>
@@ -44,13 +49,14 @@ const LegalNotices = () => {
                             <p>91 rue du Faubourg Saint Honoré <br/>
                             75008 Paris</p>
                             <FontAwesomeIcon icon={faGlobe} />
-                            <a href="https://www.alwaysdata.com/" target="_blank" rel="noreferrer"> https://www.alwaysdata.com</a>
+                            <a className="ln-link" href="https://www.alwaysdata.com" target="_blank" rel="noreferrer"> www.alwaysdata.com</a>
                         </div>
                     </div>
                 </div>
 
+                {/* Crédits */}
                 <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingThree">
+                    <h2 className="accordion-header">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Crédits
                         </button>
@@ -59,7 +65,7 @@ const LegalNotices = () => {
                         <div className="accordion-body">
                             <h4>Crédits</h4>
                             <p>Site développé par John Doe, étudiant du CEF.</p>
-                            <p>Les images libresde droits sont issues du site <a href="https://pixabay.com/fr/" target="_blank" rel="noreferrer">Pixabay</a>.</p>
+                            <p>Les images libresde droits sont issues du site <a className="ln-link" href="https://pixabay.com/fr/" target="_blank" rel="noreferrer">Pixabay</a>.</p>
                         </div>
                     </div>
                 </div>

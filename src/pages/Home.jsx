@@ -1,20 +1,31 @@
 import React from "react";
+
 import './Home.css';
 
 const Home = () => {
+
+    const scrollToAboutSection = () => {
+        const aboutSection = document.getElementById("about-section");
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div>
-            <section className="home-section">
-                <div className="home-container">
+            <div className="home-bloc">
+                {/* Header */}
+                <div className="home-header">
                     <h1>Bonjour, je suis John Doe</h1>
                     <h2>Développeur web full stack</h2>
-                    <a href="#about-section">
-                        <button type="button" className="btn btn-primary">En savoir plus</button>
-                    </a>
+                    <button type="button" className="btn btn-primary" onClick={scrollToAboutSection}>
+                        En savoir plus
+                    </button>
                 </div>
-            </section>
+            </div>
 
-            <section className="about-section" id="about-section">
+            <div className="about-bloc" id="about-section">
+                {/* À  propos */}
                 <div className="about-container">
                     <h3 className="about-title">À  propos</h3>
                     <p className="about-p">Passioné par l'informatique et les nouvelles
@@ -28,6 +39,8 @@ const Home = () => {
                     <p>J'accorde une attention particulière à la qualité du code 
                     que j'écris et je respecte les bonnes pratiques du web.</p>
                 </div>
+
+                {/* Compétences */}
                 <div className="progress-container">
                     <img src="/images/john-doe-about.jpg" alt="Homme de profil" className="a-img"/>
                     <h3>Mes compétences</h3>
@@ -57,7 +70,7 @@ const Home = () => {
                         <div className="progress-bar" role="progressbar" aria-label="Basic example" style={{width:"50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }
